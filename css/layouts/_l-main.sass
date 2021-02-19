@@ -1,0 +1,138 @@
+@import ../variables/_v-color
+@import ../variables/_v-fontfamily
+body
+    width: 100vw
+    height: 100vh
+
+.main
+    background-image: url('../../images/bg-desktop.png')
+    height: 100%
+    width: 100%
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
+    background-color: $cverydarkblue
+    display: flex
+    justify-content: center
+    align-content: center
+.main__contenedor
+    height: 45%
+    width: 1000px
+    display: flex
+    justify-content: space-between
+    align-self: center
+    @media (max-width:375px)
+        flex-direction: column
+        height: 100%
+        width: 100%
+//-------------MAIN LEFT
+.main__left
+    height: 80%
+    width: 35%
+    background-color: $cdarkblue
+    border-radius: 10px 150px 10px 10px
+    align-self: flex-end
+    padding: 30px
+    @media (max-width:375px)
+        // flex-direction: column
+        height: 50%
+        width: 100%
+        border-radius: 0 150px 0 0
+.main__logo
+    height: 60px
+    margin-bottom: 20px
+    img
+        height: 100%
+.main__icons
+    display: flex
+
+
+
+//-------------MAIN RIGHT
+.main__right
+    height: 70%
+    width: 60%
+    background-color: $cdarkblue
+    align-self: flex-end
+    border-radius: 10px
+    position: relative
+    padding: 50px
+    color: #FFF
+    font-family: $ffRaleway
+    @media (max-width:375px)
+        // flex-direction: column
+        height: 50%
+        width: 100%
+        border-radius: 0
+        margin-top: 20px
+    
+
+.main__message
+    width: 200px
+    height: 80px
+    background-color: #fff
+    position: absolute
+    border-radius: 10px 10px 0 10px
+    right: 60px
+    top: -40px
+    color: #000
+    h1
+        margin-top: 10px
+    &::after
+        content: ""
+        border-width: 10px 20px
+        border-color: #fff #FFF transparent transparent 
+        border-style: solid
+        position: absolute
+        right: 0
+        bottom: -20px
+// -----Main storage
+// .main__storage
+//     display: flex
+.level
+    display: flex
+    flex-direction: column
+    margin: 10px 0 5px 0
+
+.level__line
+    width: 100%
+    height: 20px
+    background-color: $cverydarkblue
+    border-radius: 10px
+    padding: 2.5px
+
+.level__line-inner
+    width: 70%
+    height: 15px
+    // background-color: red
+    border-radius: 10px
+    position: relative
+    background: linear-gradient(to left, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    &::after
+        content: ""
+        position: absolute
+        width: 15px
+        height: 15px
+        border-radius: 7.5px 
+        background-color: #FFF
+        right: 0px
+        top: 0
+
+.level__gb
+    display: flex
+    justify-content: space-between
+
+
+// ----BLOQUES
+.icon
+    height: 50px
+    width: 50px
+    padding: 10px
+    background-color: $cverydarkblue
+    border-radius: 10px
+    margin-left: 10px
+    .img__icon
+        height: 30px
+        width: 30px
+
+
